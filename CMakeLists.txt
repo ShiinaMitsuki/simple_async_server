@@ -1,7 +1,0 @@
-PROJECT(simple_async_server) 
-SET(SRC_LIST main.cpp asio_server.cpp socket_base.cpp)
-SET(CMAKE_CXX_COMPILER "clang++")
-SET(CMAKE_CXX_FLAGS "-std=c++11 -g -Weverything")
-SET(CMAKE_EXE_LINKER_FLAGS "-lboost_system") 
-SET(CMAKE_BUILD_TYPE Debug) 
-ADD_EXECUTABLE(server_bin ${SRC_LIST})
